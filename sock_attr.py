@@ -12,9 +12,7 @@ s.setsockopt(SOL_SOCKET,SO_REUSEADDR,True)
 s.bind('127.0.0.1',8888)
 s.listen(3)
 
-print(s.family)
-print(s.type)
-print(s.getsockname())
+
 
 c,addr = s.accept()
 print(c.getpeername())
